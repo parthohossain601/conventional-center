@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holiday Convention Center</title>
+  <!-- favicon -->
+  <link rel="icon" href="icons/logo.jpg">
+  <!--------------- custom css link---------- -->
+  <link rel="stylesheet" href="style.css">
+  <!--------------- bootstrap link----------- -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!--------------- font awesome icon link------------- -->
+  <script src="https://kit.fontawesome.com/7b907a9b06.js" crossorigin="anonymous"></script>
+  <!-- -------------------google fonts------------------ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+  <!------------------ navigation section start--------------- -->
+  <nav class="navbar fixed-top navbar-expand-lg mb-5">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <!-- <i class="fa-solid fa-lights-holiday"></i> -->
+        <h3>WEDDING <span> VALLEY</span></h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#package">Package</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#contact">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="regist" aria-current="page" href="#">Registration</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <br>
+  <!-- -------------------------------**** carousel section start*****----------------------------------- -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true pt-5 mt-5">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4 "></button> -->
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/pPGAx.jpg" class="d-block w-100 img" alt="..."
+          style="height: 500px; background-image: linear-gradient rgba(0,0,0,0.7);">
+        <div class="carousel-caption">
+          <h1>The Perfect Venue For Your Next Event</h1>
+          <p class="pt-2">We are always try to provide out best service</p>
+          <a href="#">
+            <button class="btn-btn mt-3">BOOK NOW</button>
+          </a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/232.jpg" class="d-block w-100" alt="..." style="height: 500px;">
+        <div class="carousel-caption">
+          <h1>Here You Will Find Everything <br>You Need.</h1>
+          <p class="pt-2">a large civic building or group of buildings designed for conventions.</p>
+          tenetur molestias tempora ratione!</p>
+          <p>
+            <a href="#">
+              <button class="btn-btn mt-3">BOOK NOW</button>
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/121.jpg" class="d-block w-100" alt="..." style="height: 500px;">
+        <div class="carousel-caption">
+          <h1>The Weeding Place Is Very Attractive And Charming</h1>
+          <p class="pt-2">Our main goal is that we are always clean and humble.We are always try to our best.</p>
+          <a href="#">
+            <button class="btn-btn mt-3">BOOK NOW</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- -------------------------------**** carousel section end*****----------------------------------- -->
+
+  <div id="tst-ts">
+    <img src="icons/notification.png" class="img-fluid" id="liveToastBtn" width="50px" alt="">
+    <div class="" style="z-index:11;">
+      <div class="toast" id="liveToast">
+        <div class="toast-header" id="toast-head">
+          <div class="" id="toast-t">
+            <img src="icons/Vector.svg" alt="">
+            <strong>
+              <p class="pt-3 ps-3">20% off on next booking</p>
+            </strong>
+          </div>
+
+          <button class="btn-close" data-bs-dismiss="toast"></button>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <!-------------------------------------------------------------------------  -->
+  <div class="container mt-3 pt-3">
+    <div class="row">
+      <div class="col-md-6 col-lg-6">
+        <img src="img/112.jpg" class="img-fluid rounded-3" style="height: 300px;" alt="">
+      </div>
+      <div class="col-md-6 col-lg-6 p-2">
+        <div class="card-body">
+          <h1 style="font-weight: 600;">Every moment is precious</h1>
+          <p>Continue reading below to find a list of both short and sweet love and marriage quotes to inspire your own
+            wedding day. Use them as a starting point for your wedding vows, sprinkle them throughout your heartwarming
+            toast, or work them into your wedding decor and wedding invitations. Whichever sentiment you choose, it’s
+            bound to hit home and bring a tear the eyes of all your guests.</p>
+          <button class="btn-btn" id="explore">Explore our album ➡</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ****************************************package section start*************************************************** -->
+  <section class="container mt-5 pt-5">
+    <div class="d-flex align-items-center justify-content-center" id="package">
+      <h1 class="packg mb-5" id="client">Our Package</h1>
+    </div>
+    <div class="row mt-5 " id="para">
+      <div class="col-md-3 col-sm-6  " id="column">
+        <h1>$300</h1>
+        <h2>Business fair</h2>
+        <p>For most business event link book fair.craft fair.</p>
+        <p><i class="fa-solid fa-circle-check"></i> Limited space access</p>
+        <p><i class="fa-solid fa-circle-check"></i> Security facility</p>
+        <p><i class="fa-solid fa-circle-check"></i> Event support</p>
+        <p><i class="fa-solid fa-circle-check"></i> Decoration design</p>
+        <p><i class="fa-solid fa-circle-check"></i> Per day bill</p>
+        <button class="btn-btn" id="service-btn">Chose plan</button>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <h1>$500</h1>
+        <h2>Wedding basic</h2>
+        <p>For weeding with basic plan and limited item</p>
+        <p><i class="fa-solid fa-circle-check"></i> Full space access</p>
+        <p><i class="fa-solid fa-circle-check"></i> Food arrangement</p>
+        <p><i class="fa-solid fa-circle-check"></i> Management support</p>
+        <p><i class="fa-solid fa-circle-check"></i> Decoration design</p>
+        <p><i class="fa-solid fa-circle-check"></i> Billed as shift</p>
+        <button class="btn-btn" id="service-btn">Chose plan</button>
+      </div>
+      <div class="col-md-3 col-sm-6" id="bg-">
+        <h1>$800</h1>
+        <h2>Wedding plus</h2>
+        <p>For most weeding with premium plans</p>
+        <p><i class="fa-solid fa-circle-check"></i> Full space access</p>
+        <p><i class="fa-solid fa-circle-check"></i> Dedicated team</p>
+        <p><i class="fa-solid fa-circle-check"></i> Buffet food</p>
+        <p><i class="fa-solid fa-circle-check"></i> Premium decoration</p>
+        <p><i class="fa-solid fa-circle-check"></i> Pay as plan</p>
+        <button class="btn-btn" id="srv-btn">Chose plan</button>
+        <div class="hot">
+          <h6>HOT</h6>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <h1>$1200</h1>
+        <h2>Corporate event</h2>
+        <p>For most corporate business events plan</p>
+        <p><i class="fa-solid fa-circle-check"></i> Full space access</p>
+        <p><i class="fa-solid fa-circle-check"></i> Dedicated team</p>
+        <p><i class="fa-solid fa-circle-check"></i> Buffet food</p>
+        <p><i class="fa-solid fa-circle-check"></i> Premium decoration</p>
+        <p><i class="fa-solid fa-circle-check"></i> Pay as plan</p>
+        <button class="btn-btn" id="service-btn">Chose plan</button>
+      </div>
+    </div>
+  </section>
+  <!-- ****************************************package section end*************************************************** -->
+  <!-- ---------------------------------------------------------------- -->
+  <section class="container">
+    <h1 class="d-flex align-items-center justify-content-center mt-5 pt-5 pb-5" id="about">Happy Clients Says</h1>
+    <div class="row">
+      <div class="col-md-4" id="card-body-cb">
+
+        <div class="card p-4" id="idfl">
+          <p id="about">Slate helps you see how many more days you need to work to reach your financial goal for the
+            month and
+            year.</p>
+          <img class="rounded-pill" width="100px" src="images/aminul.jpg" alt="">
+          <h4>Aminul Islam</h4>
+          <h5>Web designer</h5>
+        </div>
+      </div>
+      <div class="col-md-4" id="card-body-cb">
+        <div class="card p-4" id="idfl">
+          <p>Hey,I am Tazin.I am a senior front-end web designer.I am actuallay work on fiverr and upwork and
+            freelancer.</p>
+          <img class="rounded-pill bg-info" width="100px" src="images/22.png" alt="">
+          <h4>A.H Tazin</h4>
+          <h5>Web designer</h5>
+        </div>
+      </div>
+      <div class="col-md-4" id="card-body-cb">
+        <div class="card p-4" id="idfl">
+          <p>Hey,I am Aminul Islam.I am a Senior front-end web designer.I always dedicated to my hard work.</p>
+          <img class="rounded-pill" width="100px" src="images/person 2.png" alt="">
+          <h4>Jone Drake</h4>
+          <h5>Web designer</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ------------------------------------frequently asked question----------------------------------------- -->
+  <section class="container">
+    <h1 class="d-flex align-items-center justify-content-center mt-5 pt-5 pb-5" id="About Us">Frequently Asked Question
+    </h1>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                What's the difference between event design and planning? </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Any event pro knows anything can happen at any time, especially when you’re in
+                “go mode.” Take a breath and focus on solutions. Your careful planning will no doubt pay off when
+                missteps happen — you’ll know who to call, how to react and the pieces that have to come together now to
+                right the course. And that’s the mark of a true event pro.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                How early do we need to start planning an event </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">A great event isn’t luck or timing. A great event is a great event
+                professional who’s spent countless hours planning, re-planning and understanding the ins and outs of
+                this exciting program. It’s the opportunity to execute paired with the careful planning and strategic
+                thinking — two hallmarks of eventprofs!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                What's is your refund and camcellation policy? </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">The moment you see the full picture — the excited attendees, the satisfied
+                sponsors, the engaged speakers and the incredible decor, food and experiences — is the moment you see
+                all of your planning and insights come together. And it’s then that those wild dreams really do come
+                true!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                How do you keep budgets on track? </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">The moment you see the full picture — the excited attendees, the satisfied
+                sponsors, the engaged speakers and the incredible decor, food and experiences — is the moment you see
+                all of your planning and insights come together. And it’s then that those wild dreams really do come
+                true!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="images/people.png" class="img-fluid" alt="" style="height:250px; width:450px;">
+      </div>
+    </div>
+  </section>
+  <!-- footer section start  -->
+  <div id="bg-area">
+    <div class="container text-white p-5 mt-5" id="contact">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="d-flex align-items-center justify-content-center">
+            <h4>Copyright</h4>
+          </div>
+          <div class="d-flex align-items-center justify-content-center">
+            <h5>© all right reserved by creative web-2022</h5>
+          </div>
+          <div class="d-flex align-items-center justify-content-center ">
+            <a href="https://www.facebook.com/profile.php?id=100007864486994" target="_blank">
+              <img src="icons/facebook.png" class="img-fluid" style="height:50px; width:50px" alt="">
+            </a>
+            <a href="https://twitter.com/Aminuli16" target="_blank">
+              <img src="icons/twitter.png" class="img-fluid" style="height:50px; width:50px" alt="">
+            </a>
+            <a href="https://www.instagram.com/aminul683/" target="_blank">
+              <img src="icons/instragram.png" class="img-fluid" style="height:50px; width:50px" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex align-items-center justify-content-center">
+            <h4>Get the app</h4>
+          </div>
+          <div class="d-flex align-items-center justify-content-center">
+            <a href="https://www.apple.com/app-store/" target="_blank">
+              <img src="icons/app store.png" class="img-fluid" style="width: 200px;
+        height: 60px;
+        " alt="">
+            </a>
+          </div>
+          <div class="d-flex align-items-center justify-content-center pt-2">
+            <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank">
+              <img src="icons/app.png" class="img-fluid" style="width: 200px;
+          height: 60px;
+          " alt="">
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- footer section end  -->
+
+  <!-- ***********************************************-----the end section-----*********************************************** -->
+  <!--------------------- custom js link------------------ -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <!-- ----------------bootstrap live toast------------------ -->
+  <script>
+    const toastTrigger = document.getElementById('liveToastBtn')
+    const toastLiveExample = document.getElementById('liveToast')
+    if (toastTrigger) {
+      toastTrigger.addEventListener('click', () => {
+        const toast = new bootstrap.Toast(toastLiveExample)
+
+        toast.show()
+      })
+    }
+  </script>
+
+</body>
+
+</html>
